@@ -22,7 +22,7 @@
     </form>
 
     <h2>検索する</h2>
-    <form th:action="@{/serch}" th:object="${serchForm}" method="post">
+    <form th:action="@{/search}" th:object="${searchForm}" method="post">
         <label for="keyword">キーワード：</label>
         <input type="text" required th:field="*{keyword}" />
         <input type="submit" value="検索する" />
